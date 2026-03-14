@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Usage:
+#   ./mip_auto_launch <subject> [sleep_seconds] [xml1] [xml2]
+#
+# Behavior:
+# - If xml1 and/or xml2 are provided, sends those file(s) in order.
+# - If none provided, defaults to sending sample.xml twice.
+# - For each message, updates <clOrdID> to a new random numeric of the same length.
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LAUNCH_SH="${SCRIPT_DIR}/launch.sh"
+SAMPLE_XML="${SCRIPT_DIR}/sample.xml"
+
+SUBJECT="${1:-TEST.SUBJECT}"
+
+# Flexible parsing: allow either
+#   <subject> <sleep> [xml1] [xml2]
+# or
+#   <subject> <xml1> [xml2]
+
+SECOND_ARG="${2:-}"
+THIRD_ARG="${3:-}"
+FOURTH_ARG="${4:-}"
+
+is_number() { [[ "$1" =~ ^[0-9]+(\.[0-9]+)?$ ]]; }
+
+if [[ -n "${SECOND_ARG}" ]] && is_number "${SECOND_ARG}"; then
+  SLEEP_SECONDS="${SECOND_ARG}"
+  XML1="${THIRD_ARG:-}"
+  XML2="${FOURTH_ARG:-}"
+else
+  SLEEP_SECONDS="1"
+  XML1="${SECOND_ARG:-}"
+  XML2="${THIRD_ARG:-}"
+fi
+
+if [[ ! -f "${LAUNCH_SH}" ]]; then
+  echo "ERROR: launch.sh not found at ${LAUNCH_SH}" >&2
+  exit 1
+fi
+if [[ -n "${XML1}" ]] && [[ ! -f "${XML1}" ]]; then
+  echo "ERROR: xml1 not found at ${XML1}" >&2
+  exit 1
+fi
+if [[ -n "${XML2}" ]] && [[ ! -f "${XML2}" ]]; then
+  echo "ERROR: xml2 not found at ${XML2}" >&2
+  exit 1
+fi
+if [[ -z "${XML1}" ]] && [[ ! -f "${SAMPLE_XML}" ]]; then
+  echo "ERROR: sample.xml not found at ${SAMPLE_XML} (needed as default)" >&2
+  exit 1
+fi
+
+# Build the send list (1 or 2 items)
+declare -a SEND_XMLS
+if [[ -n "${XML1}" ]]; then
+  SEND_XMLS+=("${XML1}")
+  if [[ -n "${XML2}" ]]; then
+    SEND_XMLS+=("${XML2}")
+  fi
+else
+  SEND_XMLS+=("${SAMPLE_XML}" "${SAMPLE_XML}")
+fi
+
+gen_fixed_length_numeric() {
+  local len="$1"
+  # Generate random digits, allowing leading zeros, exactly len characters
+  # Fallback to /dev/urandom + tr; ensure not empty
+  local out
+  out=$(tr -dc '0-9' </dev/urandom | head -c "${len}" || true)
+  if [[ -z "${out}" ]]; then
+    out=$(printf '%0.s0' $(seq 1 "${len}"))
+  fi
+  # If we didn't get enough digits (rare), pad with zeros
+  if [[ ${#out} -lt ${len} ]]; then
+    out="${out}$(printf '%0.s0' $(seq 1 $((len - ${#out}))))"
+  fi
+  printf '%s' "${out}"
+}
+
+make_xml_with_id() {
+  local in_xml="$1"; shift
+  local new_id="$1"; shift
+  local out_xml="$1"; shift
+  # Replace the clOrdID content only
+  sed -E "s|(<clOrdID>)[^<]*(</clOrdID>)|\\1${new_id}\\2|" "${in_xml}" > "${out_xml}"
+}
+
+send_once() {
+  local xml_file="$1"
+  bash "${LAUNCH_SH}" -m "${SUBJECT}" "${xml_file}"
+}
+
+declare -a TMP_FILES
+cleanup() { for f in "${TMP_FILES[@]:-}"; do [[ -n "$f" ]] && rm -f "$f" || true; done; }
+trap cleanup EXIT
+
+idx=0
+for template_xml in "${SEND_XMLS[@]}"; do
+  ((idx+=1))
+  current_id="$(grep -oP '<clOrdID>\K[^<]+' "${template_xml}" | head -n1 || true)"
+  if [[ -z "${current_id}" ]]; then
+    echo "ERROR: Could not find <clOrdID> in ${template_xml}" >&2
+    exit 1
+  fi
+  id_len="${#current_id}"
+  tmpfile="$(mktemp)"; TMP_FILES+=("${tmpfile}")
+  new_id="$(gen_fixed_length_numeric "${id_len}")"
+  make_xml_with_id "${template_xml}" "${new_id}" "${tmpfile}"
+  echo "Sending message ${idx} using template $(basename "${template_xml}") with clOrdID=${new_id} to subject ${SUBJECT}"
+  send_once "${tmpfile}"
+  if [[ ${idx} -lt ${#SEND_XMLS[@]} ]]; then
+    sleep "${SLEEP_SECONDS}"
+  fi
+done
+
+echo "Done."
+

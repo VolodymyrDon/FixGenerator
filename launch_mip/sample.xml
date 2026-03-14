@@ -1,0 +1,31 @@
+<gateway.NewOrderSingle_t>
+  <header>
+    <onBehalfOf>
+      <onBehalfOfSubID>32070923</onBehalfOfSubID>
+    </onBehalfOf>
+    <sender>
+      <senderSubID>32070923</senderSubID>
+    </sender>
+  </header>
+  <newOrderSingleBlock>
+    <clOrdID>220208323</clOrdID>
+    <handlInst>DMA</handlInst>
+    <instrumentBlock>
+      <instrSymbol>VOD LN</instrSymbol>
+      <instrType>Equity</instrType>
+      <!--securityID>VOD</securityID-->
+      <securityIDSource>Blmbrg</securityIDSource>
+      <securityExchange>LN</securityExchange>
+    </instrumentBlock>
+    <ordQtyData>
+      <ordQty>1000.0</ordQty>
+    </ordQtyData>
+    <ordType>Market</ordType>
+    <side>Sell</side>
+    <timeInForce>Day</timeInForce>
+    <transID>123456789102314569874</transID>
+    <venueAccount>
+      <venueActGrpName>CERN01</venueActGrpName>
+    </venueAccount>
+  </newOrderSingleBlock>
+</gateway.NewOrderSingle_t>

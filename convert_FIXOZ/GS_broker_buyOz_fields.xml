@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<quod>
+    <configurable_mapping>
+        <fields>
+
+            <QuoteRequestRejectBlock.ClQuoteReqID disable="true"/>
+            <QuoteRequestRejectBlock.QuoteRequestRejReason disable="true"/>
+            <QuoteCancelBlock.QuoteCancelType disable="true"/>
+            <ExecutionReportBlock.SettlType disable="true"/>
+            <ExecutionReportBlock.LastTradedQty fixField="LastQty" disable="false"/>
+            <OrderCancelReplyBlock.CreationTime fixField="TransactTime" disable="false"/>
+            <OrderCancelReplyBlock.ExecType disable="true"/>
+	    <OrderModificationReplyBlock.ExecType disable="true"/>
+            <NewOrderReplyBlock.CreationTime fixField="TransactTime" disable="false"/>
+            <TradeCaptureReportBlock.LastTradedQty fixField="LastQty" disable="false"/>
+            <QuoteBlock.SettlType disable="true"/>
+            <SecurityDefinitionReplyBlock.SecurityBlock.FreeNotes disable="true"/>
+            <SecurityDefinitionReplyBlock.ReplyType disable="true"/>
+            <SecurityDefinitionReplyBlock.ErrorCD disable="true"/>
+            <SecurityDefinitionReplyBlock.SecurityID disable="true"/>
+            <VenueAccount.RouteActGrpName fixField="Account" disable="false"/>
+            <OrderModificationRequestBlock.SettlType disable="true"/>
+            <NewOrderMultiLegBlock.SettlType disable="true"/>
+            <QuoteReqBlock.SettlType disable="true"/>
+            <QuoteReqBlock fixField="NoRelatedSym" disable="false"/>
+            <NewOrderSingleBlock.SettlType disable="true"/>
+
+            <ReplySource disable="true"/>
+            <AccountCode/>
+            <AccountGroupID fixField="Account" disable="false"/>
+            <AccountType/>
+            <AccruedInterestRate/>
+            <ActionCD/>
+            <AffectedOrderBlock/>
+            <AffectedVenueOrdID/>
+            <AgentRoleID/>
+            <AgentUserID/>
+            <AggressorIndicator/>
+            <AlgoIncluded/>
+            <AlgoParamBlock fixField="NoStrategyParameters" disable="false"/>
+            <AlgoParameterName fixField="StrategyParameterName" disable="false"/>
+            <AlgoParameterType fixField="StrategyParameterType" disable="false"/>
+            <AlgoParameterValue fixField="StrategyParameterValue" disable="false"/>
+            <AlgoPolicyName/>
+            <AlgoStatus/>
+            <AlgoType/>
+            <AlgorithmicTradeIndicator fixField="AlgorithmicTradeIndicator" disable="false"/>
+            <Alive/>
+            <AllocAccountBlock fixField="NoAllocs" disable="false"/>
+            <AllocAvgPx/>
+            <AllocClientAccountID fixField="AllocAccount" disable="false"/>
+            <AllocClientAccountIDSource/>
+            <AllocClientCommission/>
+            <AllocClientCommissionBasis/>
+            <AllocClientCommissionBlock/>
+            <AllocClientCommissionCurrency/>
+            <AllocCommissionAmount/>
+            <AllocCommissionAmountType/>
+            <AllocCommissionBasis/>
+            <AllocCommissionCurrency/>
+            <AllocCommissionDesc/>
+            <AllocCommissionRate/>
+            <AllocFreeAccountID/>
+            <AllocGrossTradeAmt/>
+            <AllocInstructionMisc0/>
+            <AllocInstructionMisc1/>
+            <AllocInstructionMisc2/>
+            <AllocInstructionMisc3/>
+            <AllocInstructionMisc4/>
+            <AllocInstructionMisc5/>
+            <AllocInstructionMisc6/>
+            <AllocInstructionMisc7/>
+            <AllocInstructionMisc8/>
+            <AllocInstructionMisc9/>
+            <AllocNetMoney/>
+            <AllocNetPrice/>
+            <AllocPrice/>
+            <AllocQty fixField="AllocShares" disable="false"/>
+            <AllocRejCode/>
+            <AllocReportType/>
+            <AllocRouteSecActName/>
+            <AllocSettlCurrAmt/>
+            <AllocSettlCurrency/>
+            <AllocStatus/>
+            <AllocTransType/>
+            <AllocType/>
+            <AllocVenueAccountID/>
+            <AllocVenueAccountIDSource fixField="AcctIDSource" disable="false"/>
+            <AllocVenueClientAccountName/>
+            <AllocationDate/>
+            <AllocationExpireDate/>
+            <AllowInstrTypeCreation/>
+            <AllowManualQuoting/>
+            <ApplResendFlag/>
+            <AssistedReportAPA/>
+            <AsyncIndicator/>
+            <AuctionLimitPrice/>
+            <AvgDailyVol20/>
+            <AvgPrice fixField="AvgPx" disable="false" precision="6"/>
+            <AvgPriceType/>
+            <AvgPx/>
+            <AvgPxPrecision/>
+            <BackOfficeNotes/>
+            <BaseCurrDeltaBookedQty/>
+            <BaseCurrency/>
+            <BidForwardPoints fixField="BidForwardPoints" disable="false"/>
+            <BidID/>
+            <BidPx fixField="BidPx" disable="false"/>
+            <BidSize fixField="BidSize" disable="false"/>
+            <BidSpotRate fixField="BidSpotRate" disable="false"/>
+            <BidSwapPoints fixField="BidSwapPoints" disable="false"/>
+            <BkStlCurrFxRateCalc/>
+            <BookSettlCurrFxRate/>
+            <BookType/>
+            <BookedCommission/>
+            <BookingType/>
+            <BrkDateNDFMaturityDate/>
+            <BuyInAuction/>
+            <CDOrdFreeNotes fixField="Text" disable="false"/>
+            <CFI fixField="CFICode" disable="false"/>
+            <CalculatedCcyLastQty fixField="CalculatedCcyLastQty" disable="false"/>
+            <CallPut fixField="CallPut" disable="false"/>
+            <CancelStatus/>
+            <CashOrdQty fixField="CashOrderQty" disable="false"/>
+            <CentralCounterparty/>
+            <ClOrdID fixField="ClOrdID" disable="false"/>
+            <ClQuoteReqID fixField="QuoteReqID" disable="false"/>
+            <ClearingAccountType/>
+            <ClearingBusinessDate fixField="ClearingBusinessDate" disable="false"/>
+            <ClearingInstruction fixField="ClearingInstruction" disable="false"/>
+            <ClearingInstructionBlock fixField="NoClearingInstructions" disable="false"/>
+            <ClearingInstructionID/>
+            <ClearingType fixField="ClearingType" disable="false"/>
+            <ClientAccountGroupID/>
+            <ClientAlgoPolicyID/>
+            <ClientAllocID/>
+            <ClientAllocReportID/>
+            <ClientBookingRefID/>
+            <ClientClientGroupID/>
+            <ClientClientTierID/>
+            <ClientCommission/>
+            <ClientCommissionBasis/>
+            <ClientCommissionBlock/>
+            <ClientCommissionCurrency/>
+            <ClientExternalBookingID/>
+            <ClientInstructionsOnly/>
+            <ClientMatchingID/>
+            <ClientQuoteID fixField="QuoteID" disable="false"/>
+            <ClientQuoteReqID fixField="QuoteReqID" disable="false"/>
+            <ClientRecipientUserID/>
+            <ClientRouteBlock/>
+            <ClientRouteID/>
+            <ClientScenarioID/>
+            <ClientUserID/>
+            <ClientVenueID/>
+            <CommCurrency/>
+            <CommType fixField="CommType" disable="false"/>
+            <Commission fixField="Commission" disable="false"/>
+            <CommissionAmount/>
+            <CommissionAmountType/>
+            <CommissionBasis/>
+            <CommissionCurrency/>
+            <CommissionDesc/>
+            <CommissionRate/>
+            <ComplianceID fixField="ComplianceID" disable="false"/>
+            <ConfirmCapacityBlock/>
+            <ConfirmID/>
+            <ConfirmRefID/>
+            <ConfirmStatus/>
+            <ConfirmTransType/>
+            <ConfirmType/>
+            <ConfirmationFlag/>
+            <ConfirmationID/>
+            <ConfirmationMisc0/>
+            <ConfirmationMisc1/>
+            <ConfirmationMisc2/>
+            <ConfirmationMisc3/>
+            <ConfirmationMisc4/>
+            <ConfirmationMisc5/>
+            <ConfirmationMisc6/>
+            <ConfirmationMisc7/>
+            <ConfirmationMisc8/>
+            <ConfirmationMisc9/>
+            <ContraBroker fixField="ContraBroker" disable="false"/>
+            <ContraBrokerBlock fixField="NoContraBrokers" disable="false"/>
+            <ContraExecID/>
+            <ContraSecondaryExecID/>
+            <ContractMultiplier fixField="ContractMultiplier" disable="false"/>
+            <CopyMsgIndicator fixField="CopyMsgIndicator" disable="false"/>
+            <CountryOfIssue/>
+            <CouponRate fixField="CouponRate" disable="false"/>
+            <Covered/>
+            <CreditRating/>
+            <CreditRatingAgency/>
+            <CrossID fixField="ClOrdID" disable="false"/>
+            <CrossPrioritization fixField="CrossPrioritization" disable="false"/>
+            <CrossThroughEUR/>
+            <CrossThroughEURToUSD/>
+            <CrossThroughUSD/>
+            <CrossThroughUSDToEUR/>
+            <CrossType fixField="CrossType" disable="false"/>
+            <CrossingOpportunityID/>
+            <CumQty fixField="CumQty" disable="false"/>
+            <Currency fixField="Currency" disable="false"/>
+            <CustDirectedOrder/>
+            <CustOrderCapacity/>
+            <CxlQty/>
+            <CxlRejReason fixField="CxlRejReason" disable="false"/>
+            <DKReason/>
+            <DayAvgPrice/>
+            <DayCumQty/>
+            <DefaultMDSymbol/>
+            <DefaultPriceType/>
+            <DeliverToCompID fixField="DeliverToCompID" disable="false"/>
+            <DeliverToLocationID/>
+            <DeliverToSubID fixField="DeliverToSubID" disable="false"/>
+            <DeltaBookedAmount/>
+            <DeltaBookedGrossAmt/>
+            <DisableShortSellPrcFallPct/>
+            <DisableShortSellUntilDate/>
+            <DisableShortSellUpdateTime/>
+            <DisclosedBlock/>
+            <DiscretionInst fixField="DiscretionInst" disable="false"/>
+            <DiscretionLimitType fixField="DiscretionLimitType" disable="false"/>
+            <DiscretionMoveType/>
+            <DiscretionOffsetType fixField="DiscretionOffsetType" disable="false"/>
+            <DiscretionOffsetValue fixField="DiscretionOffsetValue" disable="false"/>
+            <DiscretionRoundDirection/>
+            <DiscretionScope/>
+            <DisplayHighQty fixField="DisplayHighQty" disable="false"/>
+            <DisplayLowQty fixField="DisplayLowQty" disable="false"/>
+            <DisplayMethod fixField="DisplayMethod" disable="false"/>
+            <DisplayMinIncr fixField="DisplayMinIncr" disable="false"/>
+            <DisplayQty fixField="MaxFloor" disable="false"/>
+            <DisplayWhen fixField="DisplayWhen" disable="false"/>
+            <DoneForDay/>
+            <Dummy/>
+            <DynamicFreezeThresholdDown/>
+            <DynamicFreezeThresholdUp/>
+            <EURDirectQuotation1/>
+            <EURDirectQuotation2/>
+            <EURMajorPairInstrID1/>
+            <EURMajorPairInstrID2/>
+            <EURUSDIntermediateInstrID/>
+            <EffectiveDate/>
+            <EffectiveTradingPhase/>
+            <EliminationHandling/>
+            <ErroneousTrade/>
+            <ErroneousTradeReason/>
+            <ErrorCD/>
+            <ErrorLevel/>
+            <ErrorMsg/>
+            <ExDestination fixField="ExDestination" disable="false"/>
+            <ExecAckStatus/>
+            <ExecAllocBlock fixField="NoExecs" disable="false"/>
+            <ExecID/>
+            <ExecInst fixField="ExecInst" disable="false"/>
+            <ExecMisc0/>
+            <ExecMisc1/>
+            <ExecMisc2/>
+            <ExecMisc3/>
+            <ExecMisc4/>
+            <ExecMisc5/>
+            <ExecMisc6/>
+            <ExecMisc7/>
+            <ExecMisc8/>
+            <ExecMisc9/>
+            <ExecPrice fixField="LastPx" disable="false"/>
+            <ExecType fixField="ExecType" disable="false"/>
+            <ExecQty fixField="LastQty" disable="false"/>
+            <ExecRefID/>
+            <ExecRestatementReason fixField="ExecRestatementReason" disable="false"/>
+            <ExecutionOnly/>
+            <ExecutionPolicy fixField="HandlInst" disable="false"/>
+            <ExitTime/>
+            <ExpirationStyle/>
+            <ExpireDate fixField="ExpireDate" disable="false"/>
+            <ExpireTime fixField="ExpireTime" disable="false"/>
+            <ExtBenchmarkPrice/>
+            <ExtBenchmarkTime/>
+            <ExtBenchmarkTimestampType/>
+            <ExternalAlgoParameterBlock/>
+            <ExternalAlgoParameterName/>
+            <ExternalAlgoParameterType/>
+            <ExternalAlgoParameterValue/>
+            <ExternalCare/>
+            <ExternalEntitlementKey/>
+            <ExternalIOIID/>
+            <ExternalPriceLimitProfileID/>
+            <ExternalStrategyName/>
+            <ExternalTickSizeProfileID/>
+            <ExternalTradingStatus/>
+            <ExternalTransStatus fixField="OrdStatus" disable="false"/>
+            <FXCrossInstrument/>
+            <FeedSource/>
+            <FirmTradeID fixField="FirmTradeID" disable="false"/>
+            <ForexReq/>
+            <ForwardPointDivisor/>
+            <ForwardPoints/>
+            <FreeNotes fixField="Text" disable="false"/>
+            <GatingRuleCondName/>
+            <GatingRuleName/>
+            <GrossAccruedInterestRate/>
+            <GrossEffectiveYield/>
+            <GrossTradeAmt fixField="GrossTradeAmt" disable="false"/>
+            <HandlInst fixField="HandlInst" disable="false"/>
+            <HasCounterparts/>
+            <HashedListingID/>
+            <IOIID/>
+            <IPAddress/>
+            <ImpliedInSupport/>
+            <IndividualAllocID/>
+            <InstitutionLEI/>
+            <InstrCurrency/>
+            <InstrDescBlock/>
+            <InstrDescription/>
+            <InstrID/>
+            <InstrLookupSymbol/>
+            <InstrRegistry/>
+            <InstrSettlDate fixField="SettlDate" disable="false"/>
+            <InstrSubType fixField="SecuritySubType" disable="false"/>
+            <InstrSymbol fixField="Symbol" disable="true"/>
+            <InstrType fixField="SecurityType" disable="false"/>
+            <InstrumentLegBlock fixField="NoLegs" disable="false"/>
+            <InstrumentListBlock/>
+            <InstrumentListID/>
+            <InstrumentMDReqBlock/>
+            <IntradayDataMDSymbol/>
+            <IssueDate/>
+            <Issuer fixField="Issuer" disable="false"/>
+            <LangCD/>
+            <LargeNumberPxPrecision/>
+            <LastCapacity fixField="LastCapacity" disable="false"/>
+            <LastClientRouteID/>
+            <LastDisclosedTime/>
+            <LastExecTransactTime/>
+            <LastExecutionPolicy/>
+            <LastForwardPoints fixField="LastForwardPoints" disable="false"/>
+            <LastLiquidityInd fixField="LastLiquidityInd" disable="false"/>
+            <LastMkt fixField="LastMkt" disable="false"/>
+            <LastOpenDate/>
+            <LastOrdModTime/>
+            <LastPx fixField="LastPx" disable="false"/>
+            <LastRptRequested/>
+            <LastSpotRate fixField="LastSpotRate" disable="false"/>
+            <LastSwapPoints fixField="LastSwapPoints" disable="false"/>
+            <LastTradedQty fixField="LastShares" disable="false"/>
+            <LastUpdateTimestamp/>
+            <LastVenueOrdID fixField="OrderID" disable="false"/>
+            <LastVenueQuoteReqID/>
+            <LeavesQty fixField="LeavesQty" disable="false"/>
+            <LegAllocClientAccountID/>
+            <LegAllocClientAccountIDSource/>
+            <LegAllocFreeAccountID/>
+            <LegAllocQty/>
+            <LegAllocVenueAccountID/>
+            <LegAllocVenueAccountIDSource/>
+            <LegAsyncIndicator/>
+            <LegBidForwardPoints fixField="LegBidForwardPoints" disable="false"/>
+            <LegBidPx fixField="LegBidPx" disable="false"/>
+            <LegBrkDateNDFMaturityDate/>
+            <LegCFI fixField="LegCFICode" disable="false"/>
+            <LegCalculatedCcyLastQty/>
+            <LegCallPut fixField="LegPutOrCall" disable="false"/>
+            <LegContractMultiplier/>
+            <LegCountryOfIssue/>
+            <LegCouponRate/>
+            <LegCovered/>
+            <LegCurrency fixField="LegCurrency" disable="false"/>
+            <LegDefaultMDSymbol/>
+            <LegDeltaBkdGrossAmt/>
+            <LegExecPrice fixField="LastPx" disable="false"/>
+            <LegExecQty/>
+            <LegExecutionReport fixField="NoLegs" disable="false"/>
+            <LegExecutionReportBlock fixField="NoLegs" disable="false"/>
+            <LegFeedSource/>
+            <LegForwardPoints/>
+            <LegInstrCurrency/>
+            <LegInstrDescBlock/>
+            <LegInstrDescription/>
+            <LegInstrID/>
+            <LegInstrLookupSymbol/>
+            <LegInstrRegistry/>
+            <LegInstrSubType fixField="LegSecuritySubType" disable="false"/>
+            <LegInstrSymbol fixField="LegSymbol" disable="false"/>
+            <LegInstrType fixField="LegSecurityType" disable="false"/>
+            <LegIssuer/>
+            <LegLastForwardPoints/>
+            <LegLastPx fixField="LegLastPx" disable="false"/>
+            <LegLastTradedQty/>
+            <LegListingGroupID/>
+            <LegListingID/>
+            <LegMDSymbolBlock/>
+            <LegMaturityDate fixField="LegMaturityDate" disable="false"/>
+            <LegMaturityMonthYear fixField="LegMaturityMonthYear" disable="false"/>
+            <LegMaxSpread/>
+            <LegMaxTradeVolume/>
+            <LegMinTradeVolume/>
+            <LegOfferForwardPoints fixField="LegOfferForwardPoints" disable="false"/>
+            <LegOfferPx fixField="LegOfferPx" disable="false"/>
+            <LegOptAttr fixField="LegOptAttribute" disable="false"/>
+            <LegOptionRatio/>
+            <LegOrderBlock fixField="NoLegs" disable="false"/>
+            <LegOrderBookMDSymbol/>
+            <LegOrderQty fixField="LegQty" disable="false"/>
+            <LegPositionEffect fixField="LegPositionEffect" disable="false"/>
+            <LegPreTradeAllocAccountBlock/>
+            <LegPrice/>
+            <LegPriceFormat/>
+            <LegProductType fixField="LegProduct" disable="false"/>
+            <LegQty/>
+            <LegQuoteBlock fixField="NoLegs" disable="false"/>
+            <LegQuoteBookMDSymbol/>
+            <LegQuoteMDSymbol/>
+            <LegQuoteResponseBlock/>
+            <LegQuoteStatusBlock/>
+            <LegRatioQty fixField="LegRatioQty" disable="false"/>
+            <LegRefID fixField="LegRefID" disable="false"/>
+            <LegRepoTerm/>
+            <LegRoundLot/>
+            <LegSecurityAltID fixField="LegSecurityAltID" disable="false"/>
+            <LegSecurityAltIDBlock fixField="NoLegSecurityAltID" disable="false"/>
+            <LegSecurityAltIDSource fixField="LegSecurityAltIDSource" disable="false"/>
+            <LegSecurityExchange fixField="LegSecurityExchange" disable="false"/>
+            <LegSecurityID fixField="LegSecurityID" disable="false"/>
+            <LegSecurityIDSource fixField="LegSecurityIDSource" disable="false"/>
+            <LegSettlDate fixField="LegSettlDate" disable="false"/>
+            <LegSettlType fixField="LegSettlType" disable="false"/>
+            <LegSide fixField="LegSide" disable="false"/>
+            <LegStrikeCurrency fixField="LegStrikeCurrency" disable="false"/>
+            <LegStrikeDecimalPlaces/>
+            <LegStrikePrice fixField="LegStrikePrice" disable="false"/>
+            <LegSubVenueID/>
+            <LegSwapType/>
+            <LegSymbol/>
+            <LegSymbolSfx fixField="LegSymbolSfx" disable="false"/>
+            <LegTenor/>
+            <LegTickDenominator/>
+            <LegTickValue/>
+            <LegTrdCurrBookedPrc/>
+            <LegUnderlyingPrice fixField="LegPrice" disable="false"/>
+            <LegVenueExecID/>
+            <LegVenueID/>
+            <LegVenueListingGroupID/>
+            <LegVenueSubVenueID/>
+            <LevyFeeExemption/>
+            <LimitPrice/>
+            <ListID/>
+            <ListOrderStatus/>
+            <ListStatusText/>
+            <ListStatusType/>
+            <ListingDescBlock/>
+            <ListingDescription/>
+            <ListingGroupID/>
+            <ListingID/>
+            <ListingMDSymbolBlock/>
+            <ListingMisc0/>
+            <ListingMisc1/>
+            <ListingMisc2/>
+            <ListingMisc3/>
+            <ListingMisc4/>
+            <ListingMisc5/>
+            <ListingMisc6/>
+            <ListingMisc7/>
+            <ListingMisc8/>
+            <ListingMisc9/>
+            <LiveQuoteID/>
+            <LocateReqd fixField="LocateReqd" disable="false"/>
+            <LongQty/>
+            <LookupSymbol/>
+            <LotType fixField="LotType" disable="false"/>
+            <MDArrivalTime/>
+            <MDBookType/>
+            <MDEntryBaseMargin/>
+            <MDEntryBaseSize/>
+            <MDEntryCorePx/>
+            <MDEntryDateTime/>
+            <MDEntryForwardPoints/>
+            <MDEntryID/>
+            <MDEntryMargin/>
+            <MDEntryOriginator/>
+            <MDEntryPosition/>
+            <MDEntryPositionNo/>
+            <MDEntryPositionNoBlock/>
+            <MDEntryPx/>
+            <MDEntryRefID/>
+            <MDEntrySize/>
+            <MDEntrySizeBlock/>
+            <MDEntrySpotRate/>
+            <MDEntryType/>
+            <MDOriginType/>
+            <MDPriceLevel/>
+            <MDQuoteType/>
+            <MDReportID/>
+            <MDReqBlock/>
+            <MDReqID fixField="QuoteSetID" disable="false"/>
+            <MDReqRejReason fixField="QuoteRejectReason" disable="false"/>
+            <MDSource/>
+            <MDStreamID/>
+            <MDTime/>
+            <MDUpdateAction/>
+            <MDUpdateType/>
+            <MIC/>
+            <ManualOrderIndicator fixField="ManualOrderIndicator" disable="false"/>
+            <MarketDataFullBlock/>
+            <MarketDataIncBlock/>
+            <MarketDepth/>
+            <MarketDepthMDSymbol/>
+            <MarketID/>
+            <MassCanReqType fixField="MassCancelRequestType" disable="false"/>
+            <MassCancelRejectReason fixField="MassCancelRejectReason" disable="false"/>
+            <MassCancelResponse fixField="MassCancelResponse" disable="false"/>
+            <MassStatusReqID/>
+            <MatchStatus fixField="MatchStatus" disable="false"/>
+            <MatchType fixField="MatchType" disable="false"/>
+            <MaturityDate fixField="MaturityDate" disable="false"/>
+            <MaturityMonthYear fixField="MaturityMonthYear" disable="false"/>
+            <MaxErrorLevel/>
+            <MaxPriceLevels fixField="MaxPriceLevels" disable="false"/>
+            <MaxSpread/>
+            <MaxTradeVolume/>
+            <MessageReplyBlock/>
+            <MinBidSize/>
+            <MinOfferSize/>
+            <MinQty fixField="MinQty" disable="false"/>
+            <MinTradeVolume/>
+            <Misc0/>
+            <Misc1/>
+            <Misc2/>
+            <Misc3/>
+            <Misc4/>
+            <Misc5/>
+            <Misc6/>
+            <Misc7/>
+            <Misc8/>
+            <Misc9/>
+            <MiscFeeAmountDue/>
+            <MiscFeeAmt fixField="MiscFeeAmt" disable="false"/>
+            <MiscFeeBasis/>
+            <MiscFeeCategory/>
+            <MiscFeeCurr/>
+            <MiscFeeDesc/>
+            <MiscFeeRate/>
+            <MiscFeeType fixField="MiscFeeType" disable="false"/>
+            <MiscFeesBlock fixField="NoMiscFees" disable="false"/>
+            <MiscFeesCategoryBlock/>
+            <ModifyStatus/>
+            <MsgTime fixField="SendingTime" disable="false" precision="3"/>
+            <MultilegReportType fixField="MultiLegReportingType" disable="false"/>
+            <NativeQuotes/>
+            <Nested2PartyID/>
+            <Nested2PartyIDSource/>
+            <Nested2PartyRole/>
+            <Nested3PartyID/>
+            <Nested3PartyIDSource/>
+            <Nested3PartyRole/>
+            <NestedParties2Block/>
+            <NestedParties3Block/>
+            <NestedPartiesBlock fixField="NoNestedPartyIDs" disable="false"/>
+            <NestedPartyID/>
+            <NestedPartyIDSource/>
+            <NestedPartyRole/>
+            <NetAccruedInterestRate/>
+            <NetGrossInd/>
+            <NetMoney/>
+            <NetPrice/>
+            <NewsMDSymbol/>
+            <NovatedIndicator fixField="NovatedIndicator" disable="false"/>
+            <NumberOfOrders/>
+            <ORSID/>
+            <OfferForwardPoints fixField="OfferForwardPoints" disable="false"/>
+            <OfferID/>
+            <OfferPx fixField="OfferPx" disable="false"/>
+            <OfferSize fixField="OfferSize" disable="false"/>
+            <OfferSpotRate fixField="OfferSpotRate" disable="false"/>
+            <OfferSwapPoints fixField="OfferSwapPoints" disable="false"/>
+            <OnBehalfOfCompID fixField="OnBehalfOfCompID" disable="false"/>
+            <OnBehalfOfLocationID/>
+            <OnBehalfOfSubID fixField="OnBehalfOfSubID" disable="true"/>
+            <OnExchangeRequested/>
+            <OpenDate/>
+            <OptAttr fixField="OptAttribute" disable="false"/>
+            <OrdAllocBlock fixField="NoOrders" disable="false"/>
+            <OrdCancelID/>
+            <OrdCancelMisc0/>
+            <OrdCancelMisc1/>
+            <OrdCancelMisc2/>
+            <OrdCancelMisc3/>
+            <OrdCancelMisc4/>
+            <OrdCancelMisc5/>
+            <OrdCancelMisc6/>
+            <OrdCancelMisc7/>
+            <OrdCancelMisc8/>
+            <OrdCancelMisc9/>
+            <OrdCapacity fixField="OrderCapacity" disable="true"/>
+            <OrdID fixField="OrderID" disable="false"/>
+            <OrdModifyID fixField="ExecID" disable="false"/>
+            <OrdModifyMisc0/>
+            <OrdModifyMisc1/>
+            <OrdModifyMisc2/>
+            <OrdModifyMisc3/>
+            <OrdModifyMisc4/>
+            <OrdModifyMisc5/>
+            <OrdModifyMisc6/>
+            <OrdModifyMisc7/>
+            <OrdModifyMisc8/>
+            <OrdModifyMisc9/>
+            <OrdQty fixField="OrderQty" disable="false"/>
+            <OrdRejReason fixField="OrdRejReason" disable="false"/>
+            <OrdReplyID/>
+            <OrdStatus fixField="OrdStatus" disable="true"/>
+            <OrdType fixField="OrdType" disable="false"/>
+            <OrderAttributeBlock fixField="NoOrderAttributes" disable="false"/>
+            <OrderAttributeType/>
+            <OrderAttributeValue/>
+            <OrderAvgPx/>
+            <OrderBagName/>
+            <OrderBlock/>
+            <OrderBookMDSymbol/>
+            <OrderBookVisibility/>
+            <OrderCapacityQty/>
+            <OrderCategory fixField="OrderCategory" disable="false"/>
+            <OrderCreationTime/>
+            <OrderListStatusBlock/>
+            <OrderOrigination/>
+            <OrderRestriction/>
+            <OrderRestrictionBlock/>
+            <OrderSuspended/>
+            <OrderingRoleID/>
+            <OrderingUserID/>
+            <OrdrMisc0/>
+            <OrdrMisc1/>
+            <OrdrMisc2/>
+            <OrdrMisc3/>
+            <OrdrMisc4/>
+            <OrdrMisc5/>
+            <OrdrMisc6/>
+            <OrdrMisc7/>
+            <OrdrMisc8/>
+            <OrdrMisc9/>
+            <OrigClOrdID fixField="OrigClOrdID" disable="false"/>
+            <OrigCrossID/>
+            <OrigMDArrivalTime/>
+            <OrigMDTime/>
+            <OrigTradeHandlingInstr fixField="OrigTradeHandlingInstr" disable="false"/>
+            <OrigTrdMatchID/>
+            <Origin/>
+            <OriginalPrice/>
+            <Originator/>
+            <PINCode/>
+            <ParentClOrdID/>
+            <ParentClOrdIDBlock/>
+            <ParentOrderID/>
+            <PartiesBlock fixField="NoPartyIDs" disable="false"/>
+            <PartyID fixField="PartyID" disable="false"/>
+            <PartyIDSource fixField="PartyIDSource" disable="false"/>
+            <PartyRole fixField="PartyRole" disable="false"/>
+            <PartyRoleQualifier fixField="PartyRoleQualifier" disable="false"/>
+            <PartySubID fixField="PartySubID" disable="false"/>
+            <PartySubIDType fixField="PartySubIDType" disable="false"/>
+            <PegLimitType/>
+            <PegMoveType/>
+            <PegOffsetType/>
+            <PegOffsetValue fixField="PegOffsetValue" disable="false"/>
+            <PegPriceType fixField="PegPriceType" disable="false"/>
+            <PegRoundDirection/>
+            <PegScope/>
+            <PendingCancelled/>
+            <PendingModified/>
+            <PerTransacFeeExemption/>
+            <PosAmt fixField="PosAmt" disable="false"/>
+            <PosAmtType fixField="PosAmtType" disable="false"/>
+            <PosReqID fixField="PosReqID" disable="false"/>
+            <PosReqResult fixField="PosReqResult" disable="false"/>
+            <PosReqStatus fixField="PosReqStatus" disable="false"/>
+            <PosReqType fixField="PosReqType" disable="false"/>
+            <PosSettlDate/>
+            <PosType/>
+            <PositionAmountDataBlock fixField="NoPosAmt" disable="false"/>
+            <PositionCurrency fixField="PositionCurrency" disable="false"/>
+            <PositionEffect fixField="PositionEffect" disable="false"/>
+            <PositionFxRate/>
+            <PositionFxRateCalc/>
+            <PositionQtyBlock/>
+            <PositionType/>
+            <PossDup fixField="PossDupFlag" disable="false"/>
+            <PossResend fixField="PossResend" disable="false"/>
+            <PostTradeReportedPrice/>
+            <PostTradeStatus/>
+            <PreTradeAllocAccountBlock/>
+            <PreTradeLISQty/>
+            <PreTradeMultilLegAllocAccountBlock/>
+            <PreferredSecurityExchange/>
+            <PreferredVenueID/>
+            <PrevClosePx/>
+            <PrevTotalTradedQty/>
+            <Price fixField="Price" disable="false"/>
+            <PriceAmtFactor/>
+            <PriceCleansingReason/>
+            <PriceDiscovery/>
+            <PriceFormat/>
+            <PriceLimitPointBlock/>
+            <PriceLimitProfileID/>
+            <PriceType fixField="PriceType" disable="false"/>
+            <PrimaryLastMkt/>
+            <PrivateQuote/>
+            <ProductType/>
+            <PublishPrices/>
+            <PxPrecision/>
+            <Qty/>
+            <QtyType/>
+            <Quotable/>
+            <QuoteBookMDSymbol/>
+            <QuoteCancelInstrBlock fixField="NoQuoteEntries" disable="false"/>
+            <QuoteCancelType fixField="QuoteCancelType" disable="false"/>
+            <QuoteConditionBlock/>
+            <QuoteConditionEnum/>
+            <QuoteCurrDeltaBookedQty/>
+            <QuoteCurrency/>
+            <QuoteEntryID/>
+            <QuoteID/>
+            <QuoteMDSymbol/>
+            <QuoteMsgID fixField="QuoteMsgID" disable="false"/>
+            <QuotePriceType/>
+            <QuoteQualifier/>
+            <QuoteQualifierBlock/>
+            <QuoteReqInstrumentLegBlock fixField="NoLegs" disable="false"/>
+            <QuoteReqRejectBlock/>
+            <QuoteReqRejectInstrumentLegBlock/>
+            <QuoteRequestMisc0/>
+            <QuoteRequestMisc1/>
+            <QuoteRequestMisc2/>
+            <QuoteRequestMisc3/>
+            <QuoteRequestMisc4/>
+            <QuoteRequestMisc5/>
+            <QuoteRequestMisc6/>
+            <QuoteRequestMisc7/>
+            <QuoteRequestMisc8/>
+            <QuoteRequestMisc9/>
+            <QuoteRequestRejReason fixField="QuoteRejectReason" disable="false"/>
+            <QuoteRequestType/>
+            <QuoteRespID/>
+            <QuoteRespType/>
+            <QuoteResponseLevel fixField="QuoteResponseLevel" disable="false"/>
+            <QuoteStatus/>
+            <QuoteType fixField="QuoteType" disable="false"/>
+            <QuotingSessionID/>
+            <RealizedPLPercent/>
+            <RecipientDeskID/>
+            <RecipientRoleID/>
+            <RecipientUserID/>
+            <RecomputeInSettlCurrency/>
+            <ReducedByQty/>
+            <RefClientAllocID/>
+            <RefreshIndicator/>
+            <RefreshQty fixField="RefreshQty" disable="false"/>
+            <RegistID fixField="RegistID" disable="false"/>
+            <RejectText fixField="Text" disable="false"/>
+            <RelatedInstrSymbol/>
+            <RelatedInstrType/>
+            <RelatedInstrumentBlock/>
+            <RelatedInstrumentType/>
+            <RelatedListingID/>
+            <RelatedMaturityMonthYear/>
+            <RelatedSecurityAltID/>
+            <RelatedSecurityAltIDBlock/>
+            <RelatedSecurityAltIDSource/>
+            <RelatedSecurityID/>
+            <RelatedSecurityIDSource/>
+            <RelatedSymbol/>
+            <ReleaseTime/>
+            <ReplyReceivedTime/>
+            <ReplyType fixField="TrdRptStatus" disable="false"/>
+            <RepoTerm/>
+            <ReportClientVenueID/>
+            <ReportingEligibility/>
+            <Reviewed/>
+            <RiskAppreciation/>
+            <RiskAppreciationDate/>
+            <RoleID/>
+            <RootCommCurrency/>
+            <RootCommType/>
+            <RootCommission/>
+            <RootMiscFeeAmountDue/>
+            <RootMiscFeeAmt/>
+            <RootMiscFeeBasis/>
+            <RootMiscFeeCategory/>
+            <RootMiscFeeCurr/>
+            <RootMiscFeeDesc/>
+            <RootMiscFeeRate/>
+            <RootMiscFeeType/>
+            <RootMiscFeesBlock/>
+            <RootParentOrdID/>
+            <RootSettlCurrFxRate/>
+            <RootSettlCurrFxRateCalc/>
+            <RootSettlCurrency/>
+            <RoundLot/>
+            <RouteID/>
+            <RouteUserName/>
+            <RouteVenueID/>
+            <RoutingInstruction/>
+            <ScenarioName fixField="ScenarioName" disable="false"/>
+            <SecondaryAlgoPolicyID/>
+            <SecondaryClOrdID/>
+            <SecondaryDisplayQty fixField="SecondaryDisplayQty" disable="false"/>
+            <SecondaryExecID/>
+            <SecondaryFirmTradeID/>
+            <SecondaryLastMkt/>
+            <SecondaryOrderID fixField="SecondaryOrderID" disable="false"/>
+            <SecondaryTradeReportID/>
+            <SecondaryTradeReportRefID/>
+            <SecurityAltID fixField="SecurityAltID" disable="false"/>
+            <SecurityAltIDBlock fixField="NoSecurityAltID" disable="false"/>
+            <SecurityAltIDSource fixField="SecurityAltIDSource" disable="false"/>
+            <SecurityExchange fixField="SecurityExchange" disable="false"/>
+            <SecurityID fixField="SecurityID" disable="false"/>
+            <SecurityIDSource fixField="SecurityIDSource" disable="false"/>
+            <SecurityLegBlock/>
+            <SecurityListRequestType fixField="SecurityListRequestType" disable="false"/>
+            <SecurityReqID fixField="SecurityReqID" disable="false"/>
+            <SecurityResponseID/>
+            <SenderCompID/>
+            <SenderLocationID fixField="SenderLocationID" disable="false"/>
+            <SenderSubID fixField="OnBehalfOfSubID" disable="false"/>
+            <SessionKey/>
+            <SettlCurrAmt fixField="SettlCurrAmt" disable="false"/>
+            <SettlCurrBookedPrice/>
+            <SettlCurrFxRate fixField="SettlCurrFxRate" disable="false"/>
+            <SettlCurrFxRateCalc fixField="SettlCurrFxRateCalc" disable="false"/>
+            <SettlCurrency fixField="SettlCurrency" disable="false"/>
+            <SettlDate fixField="FutSettDate" disable="false"/>
+            <SettlLocation/>
+            <SettlLocationBIC/>
+            <ShortQty/>
+            <ShortSellAllowed/>
+            <Side fixField="Side" disable="false"/>
+            <SideLiquidityInd fixField="SideLiquidityInd" disable="false"/>
+            <SideOrderCrossBlock fixField="NoSides" disable="false"/>
+            <SideVenueExecID fixField="SideExecID" disable="false"/>
+            <SimulatedQuoteID/>
+            <Source/>
+            <SpotRate/>
+            <SpotSettlDate/>
+            <StampFeeExemption/>
+            <StandardMarketSize/>
+            <StaticFreezeThresholdDown/>
+            <StaticFreezeThresholdUp/>
+            <StatusMDSymbol/>
+            <StopPrice fixField="StopPx" disable="false"/>
+            <StrikeCurrency/>
+            <StrikeDecimalPlaces/>
+            <StrikeIncrement/>
+            <StrikePrice fixField="StrikePrice" disable="false"/>
+            <StrikeTickDenominator/>
+            <SubPartiesBlock fixField="NoPartySubIDs" disable="false"/>
+            <SubVenueID/>
+            <SubscriptionRequestType fixField="SubscriptionRequestType" disable="false"/>
+            <SwapPoints/>
+            <Symbol fixField="Symbol" disable="false"/>
+            <SymbolSfx fixField="SymbolSfx" disable="false"/>
+            <TargetAPA/>
+            <TargetCompID/>
+            <TargetLocationID fixField="TargetLocationID" disable="false"/>
+            <TargetSubID fixField="TargetSubID" disable="false"/>
+            <Tenor/>
+            <TickDenominator/>
+            <TickSize/>
+            <TickSizeBlock/>
+            <TickSizeProfileID/>
+            <TickValue/>
+            <TimeInForce fixField="TimeInForce" disable="false"/>
+            <ToConfirm/>
+            <TopOfBook/>
+            <TotNumReports/>
+            <TotalNumPosReports/>
+            <TradeCaptureReportInstrumentLegBlock/>
+            <TradeCaptureReportLegBlock/>
+            <TradeCaptureReportSideBlock fixField="NoSides" disable="false">
+                <Currency disable="true"/>
+            </TradeCaptureReportSideBlock>
+            <TradeDate fixField="TradeDate" disable="false"/>
+            <TradeHandlingInstr fixField="TradeHandlingInstr" disable="false"/>
+            <TradeID fixField="TradeID" disable="false"/>
+            <TradeLinkID fixField="TradeLinkID" disable="false"/>
+            <TradeMDSymbol/>
+            <TradePriceCondition/>
+            <TradePriceConditionBlock/>
+            <TradePublishIndicator/>
+            <TradeQualifier/>
+            <TradeReportAttribute/>
+            <TradeReportAttributeBlock/>
+            <TradeReportID fixField="TradeReportID" disable="false"/>
+            <TradeReportRefID fixField="TradeReportRefID" disable="false"/>
+            <TradeReportRejectReason fixField="TradeReportRejectReason" disable="false"/>
+            <TradeReportTransType fixField="TradeReportTransType" disable="false"/>
+            <TradeReportType fixField="TradeReportType" disable="false"/>
+            <TradeRequestID fixField="TradeRequestID" disable="false"/>
+            <TradingPhase fixField="TradingSessionSubID" disable="false"/>
+            <TradingReferencePrice/>
+            <TradingSession fixField="TradingSessionID" disable="false"/>
+            <TradingStatus/>
+            <TransExecStatus/>
+            <TransID/>
+            <TransStatus/>
+            <TransactTime fixField="TransactTime" disable="false"/>
+            <TrdCurrBookedPrice/>
+            <TrdMatchID fixField="TrdMatchID" disable="false"/>
+            <TrdRegPublicationReason/>
+            <TrdRegPublicationType fixField="TrdRegPublicationType" disable="false"/>
+            <TrdRegPublicationsBlock fixField="NoTrdRegPublications" disable="false"/>
+            <TrdRptStatus fixField="TrdRptStatus" disable="false"/>
+            <TrdSubType fixField="TrdSubType" disable="false"/>
+            <TrdSystemCurrFxRate/>
+            <TrdSystemCurrFxRateCalc/>
+            <TrdType fixField="TrdType" disable="false"/>
+            <TriggerNewPrice/>
+            <TriggerNewQty/>
+            <TriggerOrderType/>
+            <TriggerPrice/>
+            <TriggerPriceDirection/>
+            <TriggerPriceType/>
+            <TriggerPriceTypeScope/>
+            <TriggerSecurityDesc fixField="SecurityDesc" disable="false"/>
+            <TriggerSecurityID/>
+            <TriggerSecurityIDSource/>
+            <TriggerSymbol/>
+            <TriggerTradingSessionID/>
+            <TriggerTradingSessionSubID/>
+            <TriggerType fixField="TriggerType" disable="false"/>
+            <USDDirectQuotation1/>
+            <USDDirectQuotation2/>
+            <USDMajorPairInstrID1/>
+            <USDMajorPairInstrID2/>
+            <UnderlyingInstrDescBlock/>
+            <UnderlyingInstrID/>
+            <UnderlyingInstrLookupSymbol/>
+            <UnderlyingInstrSymbol fixField="UnderlyingSymbol" disable="false"/>
+            <UnderlyingInstrType fixField="UnderlyingSecurityType" disable="false"/>
+            <UnderlyingInstrumentBlock fixField="NoUnderlyings" disable="false"/>
+            <UnderlyingMIC/>
+            <UnderlyingPx/>
+            <UnderlyingSecurityAltID fixField="UnderlyingSecurityAltID" disable="false"/>
+            <UnderlyingSecurityAltIDBlock fixField="NoUnderlyingSecurityAltID" disable="false"/>
+            <UnderlyingSecurityAltIDSource fixField="UnderlyingSecurityAltIDSource" disable="false"/>
+            <UnderlyingSecurityID fixField="UnderlyingSecurityID" disable="false"/>
+            <UnderlyingSecurityIDSource fixField="UnderlyingSecurityIDSource" disable="false"/>
+            <UnsolicitedIndicator/>
+            <UpdateTime/>
+            <UpperLimit/>
+            <UpperLimitDouble/>
+            <UpperLimitString/>
+            <UserID/>
+            <ValidUntilTime fixField="ValidUntilTime" disable="false"/>
+            <ValidateTradingLimit/>
+            <ValueCheckAction/>
+            <ValueCheckType/>
+            <ValueChecksBlock/>
+            <VenueAccountType fixField="AccountType" disable="false"/>
+            <VenueActGrpName fixField="Account" disable="false"/>
+            <VenueActGrpNameSource/>
+            <VenueAlgoPolicyID/>
+            <VenueBlock/>
+            <VenueClientActGrpName/>
+            <VenueCommissionProfileID/>
+            <VenueCumQty/>
+            <VenueExecID fixField="ExecID" disable="false"/>
+            <VenueExecRefID fixField="ExecRefID" disable="false"/>
+            <VenueExternalBookingID/>
+            <VenueID/>
+            <VenueInstrumentListID/>
+            <VenueInstrumentListIDBlock/>
+            <VenueListingGroupID/>
+            <VenueOrdID fixField="OrderID" disable="false"/>
+            <VenuePosMaintRepID fixField="PosMaintRptID" disable="false"/>
+            <VenueQuoteID fixField="QuoteID" disable="false"/>
+            <VenueScenarioParameterID/>
+            <VenueSubVenueID fixField="MarketSegmentID" disable="false"/>
+            <VenueTraderGroupID/>
+            <VenueTraderName fixField="SenderSubID" disable="false"/>
+            <VenueTradingSessionBlock fixField="NoTradingSessions" disable="false"/>
+            <VenueTradingSessionID fixField="TradingSessionID" disable="false"/>
+            <VenueTradingSessionSubID fixField="TradingSessionSubID" disable="false"/>
+            <VenueType/>
+            <WashBookAccountID/>
+            <WashBookClientAccountID/>
+            <WorkingIndicator/>
+        </fields>
+
+         <!--All of these fields disabled to solve problem with required fix fields missing -->
+        <fix_fields> <!--Disable mapping for fix fields-->
+            <QuoteResponse.QuoteRespID disable="true"/>
+	    <QuoteResponse.QuoteRespType disable="true"/>
+	    <NewOrderSingle.OrderCapacity default="A" disable="false"/>
+	    <OrderCancelReplaceRequest.OrderCapacity default="A" disable="false"/>
+        </fix_fields>
+    </configurable_mapping>
+</quod>
+
